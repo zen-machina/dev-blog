@@ -8,7 +8,7 @@ function App() {
         <ThemeProvider theme={theme}>
             <div className="App">
                 <header className="App-header">
-                    <h3 sx={{ color: "primary" }}>HELLO WORLD</h3>
+                    <h3 sx={{ color: "primary" }}>HITHERE</h3>
                 </header>
             </div>
         </ThemeProvider>
