@@ -1,17 +1,9 @@
-/** @jsxImportSource theme-ui */
-
-import { ThemeProvider } from "theme-ui";
-import { theme } from "./theme";
-
+import Navigation from "./components/Navigation";
 function App() {
     return (
-        <ThemeProvider theme={theme}>
-            <div className="App">
-                <header className="App-header">
-                    <h3 sx={{ color: "primary" }}>HITHERE</h3>
-                </header>
-            </div>
-        </ThemeProvider>
+        <div>
+            <Navigation />;
+        </div>
     );
 }
 
