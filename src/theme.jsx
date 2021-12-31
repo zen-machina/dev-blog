@@ -13,6 +13,29 @@ const Button = {
     },
 };
 
+const Link = {
+    baseStyle: {
+        fontWeight: "bold",
+        color: "textColor.10",
+    },
+    sizes: {
+        sm: {
+            fontSize: "sm",
+            px: 4,
+            py: 3,
+        },
+        md: {
+            fontSize: "md",
+            px: 6,
+            py: 4,
+        },
+    },
+    variants: {},
+    defaultProps: {
+        size: "sm",
+    },
+};
+
 const arojoTheme = extendTheme({
     colors: {
         textColor: {
@@ -31,6 +54,7 @@ const arojoTheme = extendTheme({
     },
     components: {
         Button,
+        Link,
     },
 });
 
