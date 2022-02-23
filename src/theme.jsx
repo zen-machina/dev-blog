@@ -1,5 +1,10 @@
 import { extendTheme } from "@chakra-ui/react";
 
+const config = {
+    initialColorMode: "dark",
+    useSystemColorMode: false,
+};
+
 const Button = {
     variants: {
         solid: {
@@ -37,14 +42,17 @@ const Link = {
 };
 
 const arojoTheme = extendTheme({
+    config,
     colors: {
         textColor: {
-            10: "#BEC2CA",
-            20: "#84888E",
+            10: "#d7dade",
+            20: "#bcc0c6",
+            30: "#8a9099",
         },
         bgColor: {
-            10: "#33323B",
-            20: "#1D1D22",
+            10: "#5f656e",
+            20: "#3b3f46",
+            30: "#1c1e21",
         },
         hiColor: {
             10: "#6061E3",
@@ -56,6 +64,11 @@ const arojoTheme = extendTheme({
         Button,
         Link,
     },
+    // fonts: {
+    //     body: "system-ui, sans-serif",
+    //     heading: "Georgia, serif",
+    //     mono: "Menlo, monospace",
+    // },
 });
 
 export default arojoTheme;

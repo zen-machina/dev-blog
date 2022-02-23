@@ -1,7 +1,5 @@
 import { Flex, Link, ListItem, UnorderedList } from "@chakra-ui/react";
-// import { Link } from "react-router-dom";
-
-// import { UnorderedList, ListItem } from "@chakra-ui/react";
+import { Link as RouterLink } from "react-router-dom";
 
 const navLinks = [
     {
@@ -22,18 +20,6 @@ const navLinks = [
     },
 ];
 
-// {navLinks.map((link, index) => {
-//     <ListItem key={index}>
-//         <Link to={link.path}>{link.title}</Link>
-//     </ListItem>;
-// })}
-// <UnorderedList color="red.500" w="auto" h="30px">
-// <ul>
-//     {navLinks.map((link, index) => {
-//         <li key={index}>{link.title}</li>;
-//     })}
-// </ul>
-// </UnorderedList>
 const Navigation = () => {
     return (
         <Flex
@@ -43,16 +29,13 @@ const Navigation = () => {
             justifyContent="space-between"
             align="center"
         >
-            <UnorderedList
-                styleType="none"
-                display="flex"
-                alignItems="center"
-                h="45px"
-                w="120px"
-            >
+            <Link as={RouterLink} to="/">
+                DEV BLOG
+            </Link>
+            <UnorderedList styleType="none" display="flex" alignItems="center">
                 {navLinks.map((link, index) => (
-                    <ListItem key={index} bg="tan" listStylePosition="inside">
-                        <Link color="red.500" to={link.path}>
+                    <ListItem key={index} listStylePosition="inside">
+                        <Link as={RouterLink} to={link.path}>
                             {link.title}
                         </Link>
                     </ListItem>
