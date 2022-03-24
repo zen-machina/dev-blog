@@ -13,6 +13,7 @@
         "@chakra-ui/theme": "^1.12.2",
         "@emotion/react": "^11",
         "@emotion/styled": "^11",
+        "firebase": "^9.6.7",
         "framer-motion": "^5",
         "prettier": "^2.5.1",
         "react": "^17.0.2",

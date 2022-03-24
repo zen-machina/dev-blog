@@ -13,6 +13,7 @@ function App() {
                     <Route path="/blog" element={<Blog />} />
                     <Route path="/contact"></Route>
                     <Route path="/login"></Route>
+                    <Route path="/createpost"></Route>
                 </Routes>
             </>
         </Router>

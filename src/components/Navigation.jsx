@@ -30,7 +30,7 @@ const Navigation = () => {
             align="center"
         >
             <Link as={RouterLink} to="/">
-                DEV BLOG
+                arojoDEV
             </Link>
             <UnorderedList styleType="none" display="flex" alignItems="center">
                 {navLinks.map((link, index) => (
