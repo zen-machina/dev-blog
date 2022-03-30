@@ -1,4 +1,4 @@
-import { db } from "./firebase-config";
+import { db } from "../firebase-config";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
 import { useState } from "react";
 import DisplayBolgPost from "./DisplayBolgPost";

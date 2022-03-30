@@ -18,6 +18,10 @@ const navLinks = [
         title: "Login",
         path: "/login",
     },
+    {
+        title: "Admin",
+        path: "/admin",
+    },
 ];
 
 const Navigation = () => {
